@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Counter - Welcome</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="primary-nav">
+                    <ul class="content-ul linkSite-ul">
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Feed</a></li>
+                    </ul>
+
+                    <div class="line vert"></div>
+
+                    <ul class="content-ul linkContact-ul">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Review</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <a href="signin.html" class="btn btnLinkHeader">Inregistrare</a>
+                <a href="#" class="btn btnPopupHeader btnPopup">Intra in cont</a>
+            </div>
+        </header>
+
+        <main class="box-center">
+            <div class="box-content box-index">
+                <h1>Welcome</h1>
+                <div class="bottom">
+                    <div class="signin-button">
+                        <p>
+                            Ai cont?
+                        </p>
+                        <a href="#" class="btn btnPopupBoxWelcome btnPopup">Intra in cont</a>
+                    </div>
+                    <div class="login-button">
+
+                        <p>
+                            Nu ai cont?
+                        </p>
+                        <a href="signin.html" class="btn btnLinkBoxWelcome">Inregistrare</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                ©2025 Maverick inc. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <div class="popup" id="popup1">
+        <div class="box-content popup-content">
+            <button class="btn btnClose" id="btnClose1">X</button>
+            <h2>INTRĂ ÎN CONT ȘI JOACĂ!</h2>
+            <form class="form-content login-form-content">
+                <div class="field">
+                    <div class="userfiedl">
+                        <input type="text" name="usr" id="usr1" placeholder="E-mail/User" required>
+                    </div>
+                    <div class="pswfield">
+                        <input type="password" name="psw" id="psw1" placeholder="Parola" required>
+                    </div>
+                </div>
+                <div class="error-nessage-popup"></div>
+                <button type="submit" class="btn btnLoginPopup">Intra in cont</button>
+            </form>
+            <div class="line horz"></div>
+            <div class="bottom">
+                <p>
+                    Nu ai cont?
+                </p>
+                <a href="signin.html" class="btn btnLinkPopup">Inregistrare</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+
+</body>
+
+</html>
